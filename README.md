@@ -62,3 +62,15 @@ The model’s performance was evaluated using standard classification metrics:
 ## Conclusion
 
 This project shows that even a basic Linear Regression model, when properly preprocessed and adjusted for binary output, can yield meaningful insights in medical prediction tasks. Although it's not a classifier by design, the model achieved **76% accuracy**. Results could be enhanced using classification-specific models like **Logistic Regression** or **Decision Trees** in future experiments.
+
+## How to Run
+
+1. Open [Google Colab](https://colab.research.google.com).
+2. Upload the dataset (`diabetes.csv`) to your Colab environment.
+3. Import necessary libraries:
+```python
+import pandas as pd
+import numpy as np
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
