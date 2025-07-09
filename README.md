@@ -4,7 +4,7 @@ This project demonstrates how to use **Linear Regression** for predicting the pr
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 The dataset (`diabetes.csv`) contains 768 entries, each representing a patient, with 8 features and 1 target:
 
@@ -23,7 +23,7 @@ The dataset (`diabetes.csv`) contains 768 entries, each representing a patient, 
 
 ---
 
-## 🧹 Data Preprocessing
+## Data Preprocessing
 
 To ensure cleaner data for modeling, the following steps were performed:
 
@@ -36,7 +36,7 @@ To ensure cleaner data for modeling, the following steps were performed:
 
 ---
 
-## 🔍 Model Description
+## Model Description
 
 - **Algorithm:** Linear Regression (from `sklearn`)
 - **Classification Trick:** Predictions were rounded to the nearest integer to convert continuous output into binary classification (0 or 1).
@@ -44,7 +44,7 @@ To ensure cleaner data for modeling, the following steps were performed:
 
 ---
 
-## 📈 Evaluation Metrics
+## Evaluation Metrics
 
 The model’s performance was evaluated using standard classification metrics:
 
@@ -56,3 +56,9 @@ The model’s performance was evaluated using standard classification metrics:
 | F1 Score   | 0.648     |
 
 **Confusion Matrix:**
+[[83, 16],
+[21, 34]]
+
+## Conclusion
+
+This project shows that even a basic Linear Regression model, when properly preprocessed and adjusted for binary output, can yield meaningful insights in medical prediction tasks. Although it's not a classifier by design, the model achieved **76% accuracy**. Results could be enhanced using classification-specific models like **Logistic Regression** or **Decision Trees** in future experiments.
